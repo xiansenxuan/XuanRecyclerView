@@ -1,5 +1,7 @@
 # XuanRecyclerView
-一个开源RecyclerView，支持添加head，伸缩head，下拉刷新，上拉加载，自定义空数据布局等。
+一个开源RecyclerView，支持添加head，伸缩head，下拉刷新，上拉加载，自定义空数据布局等
+
+An open source RecyclerView, adds support for head, telescopic head, drop down to refresh, pull loads and custom data layouts
 
 
 
@@ -45,12 +47,3 @@ Please consistent section ID
 
 # Image
 ![Sample](https://github.com/xiansenxuan/XuanRecyclerView/blob/master/images/1.png)
-![Sample](https://github.com/xiansenxuan/XuanRecyclerView/blob/master/images/1.png)
-![Sample](https://github.com/xiansenxuan/XuanRecyclerView/blob/master/images/1.png)
-![Sample](https://github.com/xiansenxuan/XuanRecyclerView/blob/master/images/1.png)
-![Sample](https://github.com/xiansenxuan/XuanRecyclerView/blob/master/images/1.png)
-![Sample](https://github.com/xiansenxuan/XuanRecyclerView/blob/master/images/1.png)
-![Sample](https://github.com/xiansenxuan/XuanRecyclerView/blob/master/images/1.png)
-![Sample](https://github.com/xiansenxuan/XuanRecyclerView/blob/master/images/1.png)
-![Sample](https://github.com/xiansenxuan/XuanRecyclerView/blob/master/images/1.png)
-

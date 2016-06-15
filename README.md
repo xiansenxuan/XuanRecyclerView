@@ -46,4 +46,12 @@ Please consistent section ID
 ```
 
 # Image
-<img src="https://github.com/xiansenxuan/XuanRecyclerView/blob/master/images/1.png" width = "200" height = "200" alt="sample" align=center />
+<img src="https://github.com/xiansenxuan/XuanRecyclerView/blob/master/images/1.png" width = "320" height = "480" alt="sample"/>
+<img src="https://github.com/xiansenxuan/XuanRecyclerView/blob/master/images/2.png" width = "320" height = "480" alt="sample"/>
+<img src="https://github.com/xiansenxuan/XuanRecyclerView/blob/master/images/3.png" width = "320" height = "480" alt="sample"/>
+<img src="https://github.com/xiansenxuan/XuanRecyclerView/blob/master/images/4.png" width = "320" height = "480" alt="sample"/>
+<img src="https://github.com/xiansenxuan/XuanRecyclerView/blob/master/images/5.png" width = "320" height = "480" alt="sample"/>
+<img src="https://github.com/xiansenxuan/XuanRecyclerView/blob/master/images/6.png" width = "320" height = "480" alt="sample"/>
+<img src="https://github.com/xiansenxuan/XuanRecyclerView/blob/master/images/7.png" width = "320" height = "480" alt="sample"/>
+<img src="https://github.com/xiansenxuan/XuanRecyclerView/blob/master/images/8.png" width = "320" height = "480" alt="sample"/>
+<img src="https://github.com/xiansenxuan/XuanRecyclerView/blob/master/images/9.png" width = "320" height = "480" alt="sample"/>

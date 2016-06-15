@@ -46,4 +46,4 @@ Please consistent section ID
 ```
 
 # Image
-![sample](https://github.com/xiansenxuan/XuanRecyclerView/blob/master/images/1.png)
+<img src="https://github.com/xiansenxuan/XuanRecyclerView/blob/master/images/1.png" width = "200" height = "200" alt="sample" align=center />

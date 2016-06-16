@@ -124,7 +124,7 @@ class MyRecyclerViewAdapter extends XuanRecyclerViewAdapter<MyRecyclerViewAdapte
     RecyclerViewManager.onRefresh(state,ArrayList,recycler_view,sw_layout,adapter);
 ```
 - Details of reference demo
-- 
+
 Thanks
 ========
 - [UltimateRecyclerView](https://github.com/cymcsg/UltimateRecyclerView)

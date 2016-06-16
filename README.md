@@ -86,7 +86,7 @@ CODE...
                 }
             });
 ```            
--Setting data
+- Setting data
 ```java
 @Override
 public void onBindNormalViewHolder(MyRecyclerViewHolder holder, int position) {
@@ -95,7 +95,8 @@ public void onBindNormalViewHolder(MyRecyclerViewHolder holder, int position) {
 ```
 - Refresh And LoadMore 
 ```java
+    queryData(ContactManager.onRefresh);
+    queryData(ContactManager.onLoadMore);
     RecyclerViewManager.onRefresh(state,ArrayList,recycler_view,sw_layout,adapter);
-        state = ContactManager.onRefresh or ContactManager.onLoadMore
-            
 ```
+- Details of reference demo

@@ -36,31 +36,31 @@ Image
 How to use
 ========
 XML...
-    -Please consistent section ID
+- Please consistent section ID
 ```xml
-    <android.support.v4.widget.SwipeRefreshLayout
-        android:id="@+id/sw_layout"
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/sw_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        
-        <FrameLayout
+        android:layout_height="match_parent">
+
+        <com.xuan.recyclerview.XuanRecyclerView
+            android:id="@+id/recycler_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-    
-            <com.xuan.recyclerview.XuanRecyclerView
-                android:id="@+id/recycler_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="0dp" />
-    
-            <include
-                android:id="@+id/recycler_empty_view"
-                layout="@layout/recycler_empty_view" />
-        </FrameLayout>
-    </android.support.v4.widget.SwipeRefreshLayout>
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp" />
+
+        <include
+            android:id="@+id/recycler_empty_view"
+            layout="@layout/recycler_empty_view" />
+    </FrameLayout>
+</android.support.v4.widget.SwipeRefreshLayout>
 ```
-code...
-    -Initialize XuanRecyclerView
+CODE...
+- Initialize XuanRecyclerView
 ```java
     RecyclerViewManager.initRecyclerView(context, recycler_view, sw_layout, recycler_empty_view, adapter,
             new SwipeRefreshLayout.OnRefreshListener() {
@@ -86,14 +86,14 @@ code...
                 }
             });
 ```            
-    -Setting data
+-Setting data
 ```java
 @Override
 public void onBindNormalViewHolder(MyRecyclerViewHolder holder, int position) {
     String data = (String) itemList.get(position);
 }
-```    
-    -Refresh And LoadMore 
+```
+- Refresh And LoadMore 
 ```java
     RecyclerViewManager.onRefresh(state,ArrayList,recycler_view,sw_layout,adapter);
         state = ContactManager.onRefresh or ContactManager.onLoadMore

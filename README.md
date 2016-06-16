@@ -1,7 +1,7 @@
 XuanRecyclerView
 ========
-一个开源RecyclerView，支持添加head，伸缩head，下拉刷新，上拉加载，自定义空数据布局
-支持lineary
+- 一个开源RecyclerView，支持添加head，伸缩head，下拉刷新，上拉加载，自定义空数据布局
+- 支持GridLayoutManager LinearLayoutManager StaggeredGridLayoutManager
 
 An open source RecyclerView, adds support for head, telescopic head, drop down to refresh, pull loads and custom data layouts
 

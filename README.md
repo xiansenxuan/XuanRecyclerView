@@ -86,11 +86,34 @@ CODE...
                 }
             });
 ```            
-- Setting data
+- Adapter
 ```java
-@Override
-public void onBindNormalViewHolder(MyRecyclerViewHolder holder, int position) {
-    String data = (String) itemList.get(position);
+class MyRecyclerViewAdapter extends XuanRecyclerViewAdapter<MyRecyclerViewAdapter.MyRecyclerViewHolder> {
+    class MyRecyclerViewHolder extends RecyclerView.ViewHolder {
+        View view;
+        public MyRecyclerViewHolder(View view) {
+            super(view);
+            this.view = view;
+        }
+    }
+
+    @Override
+    public MyRecyclerViewHolder getViewHolder(View view) {
+        return new MyRecyclerViewHolder(view);
+    }
+
+    @Override
+    public MyRecyclerViewHolder onCreateViewHolder(ViewGroup parent) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(layoutResId, parent, false);
+        MyRecyclerViewHolder holder = new MyRecyclerViewHolder(view);
+        return holder;
+    }
+
+    @Override
+    public void onBindNormalViewHolder(MyRecyclerViewHolder holder, int position) {
+        Object data = (Object) itemList.get(position);
+    }
+
 }
 ```
 - Refresh And LoadMore 

@@ -36,7 +36,7 @@ Image
 How to use
 ========
 XML...
-    Please consistent section ID
+    -Please consistent section ID
 ```xml
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/sw_layout"
@@ -60,40 +60,42 @@ XML...
     </android.support.v4.widget.SwipeRefreshLayout>
 ```
 code...
-```xml
-    Initialize XuanRecyclerView
-        RecyclerViewManager.initRecyclerView(context, recycler_view, sw_layout, recycler_empty_view, adapter,
-                new SwipeRefreshLayout.OnRefreshListener() {
-                    @Override
-                    public void onRefresh() {
-                        queryData(ContactManager.onRefresh);
-                    }
-                }, new XuanRecyclerView.OnLoadMoreListener() {
-                    @Override
-                    public void loadMore() {
-                        queryData(ContactManager.onLoadMore);
-                    }
-                },
-                new OnItemClickListener() {
-                    @Override
-                    public void onItemClick(View view, int position) {
-                        Toast.makeText(getActivity(), "position=" + position, Toast.LENGTH_SHORT).show();
-                    }
-    
-                    @Override
-                    public void onItemLongClick(View view, int position) {
-                        Toast.makeText(getActivity(), "position=" + position, Toast.LENGTH_SHORT).show();
-                    }
-                });
-                
-    Setting data
-        @Override
-        public void onBindNormalViewHolder(MyRecyclerViewHolder holder, int position) {
-            String data = (String) itemList.get(position);
-        }
-        
-    Refresh And LoadMore 
-        RecyclerViewManager.onRefresh(state,ArrayList,recycler_view,sw_layout,adapter);
-            state = ContactManager.onRefresh or ContactManager.onLoadMore
+    -Initialize XuanRecyclerView
+```java
+    RecyclerViewManager.initRecyclerView(context, recycler_view, sw_layout, recycler_empty_view, adapter,
+            new SwipeRefreshLayout.OnRefreshListener() {
+                @Override
+                public void onRefresh() {
+                    queryData(ContactManager.onRefresh);
+                }
+            }, new XuanRecyclerView.OnLoadMoreListener() {
+                @Override
+                public void loadMore() {
+                    queryData(ContactManager.onLoadMore);
+                }
+            },
+            new OnItemClickListener() {
+                @Override
+                public void onItemClick(View view, int position) {
+                    Toast.makeText(getActivity(), "position=" + position, Toast.LENGTH_SHORT).show();
+                }
+
+                @Override
+                public void onItemLongClick(View view, int position) {
+                    Toast.makeText(getActivity(), "position=" + position, Toast.LENGTH_SHORT).show();
+                }
+            });
+```            
+    -Setting data
+```java
+@Override
+public void onBindNormalViewHolder(MyRecyclerViewHolder holder, int position) {
+    String data = (String) itemList.get(position);
+}
+```    
+    -Refresh And LoadMore 
+```java
+    RecyclerViewManager.onRefresh(state,ArrayList,recycler_view,sw_layout,adapter);
+        state = ContactManager.onRefresh or ContactManager.onLoadMore
             
 ```

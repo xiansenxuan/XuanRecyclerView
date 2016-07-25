@@ -17,6 +17,9 @@ import java.util.ArrayList;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
+/**
+ * xiansenxuan
+ */
 public class MainActivity extends AppCompatActivity {
     @Bind(R.id.view_pager)
     ViewPager view_pager;

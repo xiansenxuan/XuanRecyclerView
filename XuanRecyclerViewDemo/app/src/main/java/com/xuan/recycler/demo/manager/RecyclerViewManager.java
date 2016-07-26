@@ -26,7 +26,7 @@ public class RecyclerViewManager {
         // 设置recyclerview适配器
         recycler_view.setAdapter(adapter);
 
-        // 设置ultimateRecyclerView 使RecyclerView保持固定的大小，该信息被用于自身的优化
+        // 设置RecyclerView 使RecyclerView保持固定的大小，该信息被用于自身的优化
         recycler_view.setHasFixedSize(true);
 
         if(emptyView!=null){

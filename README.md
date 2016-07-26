@@ -127,7 +127,7 @@ class MyRecyclerViewAdapter extends XuanRecyclerViewAdapter<MyRecyclerViewAdapte
 
 Image
 ========
-<img src="https://github.com/xiansenxuan/XuanRecyclerView/blob/master/images/gif.png" width = "320" height = "480" alt="sample"/>
+<img src="https://github.com/xiansenxuan/XuanRecyclerView/blob/master/images/recyclerview.gif" width = "320" height = "480" alt="sample"/>
 
 Thanks
 ========

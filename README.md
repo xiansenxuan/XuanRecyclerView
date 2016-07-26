@@ -115,6 +115,9 @@ class MyRecyclerViewAdapter extends XuanRecyclerViewAdapter<MyRecyclerViewAdapte
 ```
 - Details of reference demo
 
+- thanks start and fork
+
+
 Image
 ========
 <img src="https://github.com/xiansenxuan/XuanRecyclerView/blob/master/images/1.png" width = "320" height = "480" alt="sample"/>

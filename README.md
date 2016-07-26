@@ -22,6 +22,13 @@ repositories {
 dependencies {
     compile 'com.xuan.recyclerview:XuanRecyclerView:1.0'
 }
+
+<dependency>
+  <groupId>com.xuan.recyclerview</groupId>
+  <artifactId>XuanRecyclerView</artifactId>
+  <version>1.0</version>
+  <type>pom</type>
+</dependency>
 ```
 
 How to use
